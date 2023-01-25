@@ -29,7 +29,9 @@ urlpatterns = [
     path('api/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
      path('api-auth/', include('rest_framework.urls')),
      path('api/', include('accounts.urls')),
-     path('assignment/api/', include('assignment.urls'))
+     path('api/textsearch/', include('textsearch.urls')),
+     path('api/voicesearch/', include('voicesearch.urls')),
+     path('assignment/api/', include('assignment.urls')),
 ]
 
 if settings.DEBUG:
