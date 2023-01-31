@@ -1990,7 +1990,7 @@ from .route_optimisation_capacity_weight import optimisation
 from .distance_matrix import distance_matrix
 from .rootoptgraph import plot_vehicle_graph as pltgraph
 class RootOptimazationAPI(APIView):
-    permission_classes = [IsAuthenticated]
+    # permission_classes = [IsAuthenticated]
     # Handling Post Reuqest
     def post(self, request):
         try:
